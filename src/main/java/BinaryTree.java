@@ -54,11 +54,6 @@ public class BinaryTree {
         return rootNode;
     }
 
-    private boolean IsEmptyOrder(int[] firstOrder, int[] midOrder) {
-        return firstOrder == null || firstOrder.length < 1 || midOrder == null || midOrder.length < 1
-                || firstOrder.length != midOrder.length ;
-    }
-
     public void printBinaryTreeInorder(TreeNode treeNode) {
         if(treeNode != null){
             printBinaryTreeInorder(treeNode.left);
@@ -81,6 +76,11 @@ public class BinaryTree {
             printBinaryTreeLastorder(treeNode.right);
             System.out.print(treeNode.val + " ");
         }
+    }
+
+    private boolean IsEmptyOrder(int[] firstOrder, int[] midOrder) {
+        return firstOrder == null || firstOrder.length < 1 || midOrder == null || midOrder.length < 1
+                || firstOrder.length != midOrder.length ;
     }
 
     public class TreeNode {
