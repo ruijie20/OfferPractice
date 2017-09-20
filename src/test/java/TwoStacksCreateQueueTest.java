@@ -8,7 +8,7 @@ import java.util.List;
 
 public class TwoStacksCreateQueueTest {
     @Test
-    public void shouldFIFO() throws Exception {
+    public void shouldFirstInFirstOut() throws Exception {
         MyQueue<Integer> myQueue = new MyQueue<>();
         ArrayList<Integer> integers = new ArrayList<>();
         myQueue.offer(2);
