@@ -27,8 +27,8 @@ public class MyStack<T> {
     }
 
     private void moveElement(LinkedList<T> fromList, LinkedList<T> toList) {
-        int size1 = fromList.size() - 1;
-        for (int i1 = 0; i1 < size1; i1++) {
+        int size = fromList.size() - 1;
+        for (int i = 0; i < size; i++) {
             toList.add(fromList.poll());
         }
     }
